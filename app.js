@@ -1,3 +1,5 @@
+import { doMath } from './utils.js';
+console.log(doMath('add', 3, 5));
 // get dom elements
 // get add-input-1
 const addInput1 = document.getElementById('add-input-1');
@@ -48,38 +50,36 @@ boogerButton.addEventListener('click', () => {
     const value2 = addInput2.value;
 
     // add the two values together
-    const sum = Number(value1) + Number(value2);
-
+    const sum = doMath('add', value1, value2);
     // update the textContent of the span
     boogerSpan.textContent = sum;
 });
 
 subtractButton.addEventListener('click', ()=> {
-    const subValue1 = subtractInput1.value;
-    const subValue2 = subtractInput2.value;
+    const value1 = subtractInput1.value;
+    const value2 = subtractInput2.value;
     //subtract value2 from value 1
-    const result = Number(subValue1)-Number(subValue2);
+    const result = doMath('subtract', value1, value2);
     
     //update the textcontent span
     subtractSpan.textContent = result;
 });
 
 multiplyButton.addEventListener('click', () => {
-    const multiplyValue1 = multiplyInput1.value;
-    const multiplyValue2 = multiplyInput2.value;
+    const value1 = multiplyInput1.value;
+    const value2 = multiplyInput2.value;
     //multiply value 1 and 2
-    const product = Number(multiplyValue1)* Number(multiplyValue2);
+    const product = doMath('multiply', value1, value2);
 
     //update the textcontent of the span
     multiplySpan.textContent = product;
 });
 
 divideButton.addEventListener('click', () => {
-    const divideValue1 = divideInput1.value;
-    const divideValue2 = divideInput2.value;
+    const value1 = divideInput1.value;
+    const value2 = divideInput2.value;
     //divide value 1 by value 2
-    const quotient = Number(divideValue1) / Number(divideValue2);
-    
+    const quotient = doMath('divide', value1, value2);
     //update the textContent of the span
     divideSpan.textContent = quotient;
 });
