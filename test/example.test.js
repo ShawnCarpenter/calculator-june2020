@@ -31,7 +31,7 @@ test("doMath('add', 3, -7) should return -4", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
 
 test("doMath('addition', 3, 4) should return 'Please pass add, subtract, multiply, or divide as the first argument' ", (expect) => {
@@ -45,7 +45,7 @@ test("doMath('addition', 3, 4) should return 'Please pass add, subtract, multipl
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
 
 
@@ -61,7 +61,7 @@ test("doMath('subtract', 3, 4) should return -1", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
 
 test("doMath('subtract', 'something else', 4) should return NaN", (expect) => {
@@ -75,7 +75,7 @@ test("doMath('subtract', 'something else', 4) should return NaN", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.deepEqual(expected, actual);
+    expect.deepEqual(actual, expected);
 });
 
 test("doMath('multiply', 3, 4) should return 12", (expect) => {
@@ -89,7 +89,7 @@ test("doMath('multiply', 3, 4) should return 12", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
 
 test("doMath('multiply', 3, 0) should return 0", (expect) => {
@@ -103,10 +103,10 @@ test("doMath('multiply', 3, 0) should return 0", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
 
-test("doMath('divide', 3, 0) should return 'Infinity", (expect) => {
+test("doMath('divide', 3, 0) should return 'Infinity'", (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 'Infinity';
@@ -117,5 +117,6 @@ test("doMath('divide', 3, 0) should return 'Infinity", (expect) => {
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(expected, actual);
+    expect.equal(actual, expected);
 });
+
