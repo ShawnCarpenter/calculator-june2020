@@ -34,14 +34,14 @@ test("doMath('add', 3, -7) should return -4", (expect) => {
     expect.equal(actual, expected);
 });
 
-test("doMath('addition', 3, 4) should return 'Please pass add, subtract, multiply, or divide as the first argument' ", (expect) => {
+test("doMath('+', 3, 4) should return 'Please pass add, subtract, multiply, or divide as the first argument' ", (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = 'Please pass add, subtract, multiply, or divide as the first argument';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = doMath('addition', 3, 4);
+    const actual = doMath('+', 3, 4);
 
     //Expect
     // Make assertions about what is expected versus the actual result
@@ -64,14 +64,14 @@ test("doMath('subtract', 3, 4) should return -1", (expect) => {
     expect.equal(actual, expected);
 });
 
-test("doMath('subtract', 'something else', 4) should return NaN", (expect) => {
+test("doMath('subtract', 'words', 4) should return NaN", (expect) => {
     //Arrange
     // Set up your arguments and expectations
     const expected = NaN;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = doMath('subtract', 'something else', 4);
+    const actual = doMath('subtract', 'words', 4);
 
     //Expect
     // Make assertions about what is expected versus the actual result
